@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <Type Name="sharedVector&lt;*&gt;">
+    <Expand>
+      <Item Name="[size]">h_Vec.size()</Item>
+      <ArrayItems>
+        <Size>h_Vec.size()</Size>
+        <ValuePointer Condition="h_Vec.size() > 0">&amp;h_Vec[0]</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+</AutoVisualizer>
